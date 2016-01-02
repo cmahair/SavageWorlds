@@ -1,4 +1,5 @@
-﻿using SavageWorldsCharacterSheets.Tools;
+﻿using SavageWorldsCharacterSheets.Edges;
+using SavageWorldsCharacterSheets.Tools;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,7 @@ namespace SavageWorldsCharacterSheets.Characters
     /// <summary>
     /// Represents a character in Savage worlds
     /// </summary>
+    [Serializable]
     public class Character
     {
         public string Name { get; set; }
@@ -16,20 +18,21 @@ namespace SavageWorldsCharacterSheets.Characters
         public int Pace { get; set; }
         public int Parry { get; set; }
         public int Toughness { get; set; }
-        public Tools.Attribute Agility { get; set; }
-        public Tools.Attribute Smarts { get; set; }
-        public Tools.Attribute Strength { get; set; }
-        public Tools.Attribute Spirit { get; set; }
-        public Tools.Attribute Vigor { get; set; }
-        public List<Skill> Skills { get; set; }
+        public Value Agility { get; set; }
+        public Value Smarts { get; set; }
+        public Value Strength { get; set; }
+        public Value Spirit { get; set; }
+        public Value Vigor { get; set; }
+        public Dictionary<Skill,Value> Skills { get; set; }
         public int Wounds { get; set; }
+        public List<Edge> Edges { get; set; }
+        public List<Hindrance> Hindrances { get; set; }
 
         /**
         TODO
         Equipment
         Powers
         Hindrances
-        Edges
 
         Later:
         Injuries

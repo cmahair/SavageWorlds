@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace SavageWorldsCharacterSheets.Edges
+namespace SavageWorldsCharacterSheets.Tools
 {
     [Serializable]
-    public class Edge
+    public class Hindrance
     {
-        
     }
 }

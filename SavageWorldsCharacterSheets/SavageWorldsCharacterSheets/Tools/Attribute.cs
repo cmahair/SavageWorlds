@@ -5,7 +5,13 @@ using System.Web;
 
 namespace SavageWorldsCharacterSheets.Tools
 {
-    public class Attribute : Trait
+    [Serializable]
+    public enum Attribute
     {
+        Agility,
+        Smarts,
+        Strength,
+        Spirit,
+        Vigor
     }
 }

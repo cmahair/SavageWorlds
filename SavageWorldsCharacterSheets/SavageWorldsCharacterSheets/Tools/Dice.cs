@@ -5,6 +5,7 @@ using System.Web;
 
 namespace SavageWorldsCharacterSheets.Tools
 {
+    [Serializable]
     public enum Dice
     {
         D2 = 2,

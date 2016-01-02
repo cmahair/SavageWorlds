@@ -5,8 +5,10 @@ using System.Web;
 
 namespace SavageWorldsCharacterSheets.Tools
 {
-    public class Skill : Trait
+    [Serializable]
+    public class Skill
     {
+        public string Name { get; set; }
         public Attribute GoverningAttribute { get; set; }
     }
 }
