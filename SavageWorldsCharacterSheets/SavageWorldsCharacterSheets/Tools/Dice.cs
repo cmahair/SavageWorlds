@@ -14,6 +14,5 @@ namespace SavageWorldsCharacterSheets.Tools
         D8 = 8,
         D10 = 10,
         D12 = 12,
-        D20 = 20,
     }
 }

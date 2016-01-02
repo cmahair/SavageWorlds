@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SavageWorldsCharacterSheets.Tools;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -14,6 +15,13 @@ namespace SavageWorldsCharacterSheets.Characters
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            BuildTable();
+        }
+
+        [WebMethod]
+        public static void NewCharacter()
+        {
+            character = new Character("Enter Name");
             
         }
 
@@ -22,6 +30,20 @@ namespace SavageWorldsCharacterSheets.Characters
         {
             character = new Character(name);
             return character.Pace;
+        }
+
+        private void BuildTable()
+        {
+            ddlagility.DataSource = Enum.GetNames(typeof(Dice));
+            ddlagility.DataBind();
+            ddlsmarts.DataSource = Enum.GetNames(typeof(Dice));
+            ddlsmarts.DataBind();
+            ddlspirit.DataSource = Enum.GetNames(typeof(Dice));
+            ddlspirit.DataBind();
+            ddlstrength.DataSource = Enum.GetNames(typeof(Dice));
+            ddlstrength.DataBind();
+            ddlvigor.DataSource = Enum.GetNames(typeof(Dice));
+            ddlvigor.DataBind();
         }
     }
 }
