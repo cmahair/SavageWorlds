@@ -31,3 +31,36 @@ c:\users\cmahair\documents\visual studio 2015\Projects\SavageWorldsCharacterShee
 c:\users\cmahair\documents\visual studio 2015\Projects\SavageWorldsCharacterSheets\SavageWorldsCharacterSheets\obj\Debug\SavageWorldsCharacterSheets.csprojResolveAssemblyReference.cache
 c:\users\cmahair\documents\visual studio 2015\Projects\SavageWorldsCharacterSheets\SavageWorldsCharacterSheets\obj\Debug\SavageWorldsCharacterSheets.dll
 c:\users\cmahair\documents\visual studio 2015\Projects\SavageWorldsCharacterSheets\SavageWorldsCharacterSheets\obj\Debug\SavageWorldsCharacterSheets.pdb
+C:\Users\cmahair\git\SavageWorlds\SavageWorldsCharacterSheets\SavageWorldsCharacterSheets\bin\ApplicationInsights.config
+C:\Users\cmahair\git\SavageWorlds\SavageWorldsCharacterSheets\SavageWorldsCharacterSheets\bin\roslyn\csc.exe
+C:\Users\cmahair\git\SavageWorlds\SavageWorldsCharacterSheets\SavageWorldsCharacterSheets\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\cmahair\git\SavageWorlds\SavageWorldsCharacterSheets\SavageWorldsCharacterSheets\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\cmahair\git\SavageWorlds\SavageWorldsCharacterSheets\SavageWorldsCharacterSheets\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\cmahair\git\SavageWorlds\SavageWorldsCharacterSheets\SavageWorldsCharacterSheets\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\cmahair\git\SavageWorlds\SavageWorldsCharacterSheets\SavageWorldsCharacterSheets\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\cmahair\git\SavageWorlds\SavageWorldsCharacterSheets\SavageWorldsCharacterSheets\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\cmahair\git\SavageWorlds\SavageWorldsCharacterSheets\SavageWorldsCharacterSheets\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\cmahair\git\SavageWorlds\SavageWorldsCharacterSheets\SavageWorldsCharacterSheets\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\cmahair\git\SavageWorlds\SavageWorldsCharacterSheets\SavageWorldsCharacterSheets\bin\roslyn\vbc.exe
+C:\Users\cmahair\git\SavageWorlds\SavageWorldsCharacterSheets\SavageWorldsCharacterSheets\bin\roslyn\VBCSCompiler.exe
+C:\Users\cmahair\git\SavageWorlds\SavageWorldsCharacterSheets\SavageWorldsCharacterSheets\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\cmahair\git\SavageWorlds\SavageWorldsCharacterSheets\SavageWorldsCharacterSheets\bin\SavageWorldsCharacterSheets.dll.config
+C:\Users\cmahair\git\SavageWorlds\SavageWorldsCharacterSheets\SavageWorldsCharacterSheets\bin\SavageWorldsCharacterSheets.dll
+C:\Users\cmahair\git\SavageWorlds\SavageWorldsCharacterSheets\SavageWorldsCharacterSheets\bin\SavageWorldsCharacterSheets.pdb
+C:\Users\cmahair\git\SavageWorlds\SavageWorldsCharacterSheets\SavageWorldsCharacterSheets\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\cmahair\git\SavageWorlds\SavageWorldsCharacterSheets\SavageWorldsCharacterSheets\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\cmahair\git\SavageWorlds\SavageWorldsCharacterSheets\SavageWorldsCharacterSheets\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\cmahair\git\SavageWorlds\SavageWorldsCharacterSheets\SavageWorldsCharacterSheets\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\cmahair\git\SavageWorlds\SavageWorldsCharacterSheets\SavageWorldsCharacterSheets\bin\Microsoft.AI.Web.dll
+C:\Users\cmahair\git\SavageWorlds\SavageWorldsCharacterSheets\SavageWorldsCharacterSheets\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\cmahair\git\SavageWorlds\SavageWorldsCharacterSheets\SavageWorldsCharacterSheets\bin\Microsoft.ApplicationInsights.dll
+C:\Users\cmahair\git\SavageWorlds\SavageWorldsCharacterSheets\SavageWorldsCharacterSheets\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\cmahair\git\SavageWorlds\SavageWorldsCharacterSheets\SavageWorldsCharacterSheets\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\cmahair\git\SavageWorlds\SavageWorldsCharacterSheets\SavageWorldsCharacterSheets\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\cmahair\git\SavageWorlds\SavageWorldsCharacterSheets\SavageWorldsCharacterSheets\bin\Microsoft.AI.Web.xml
+C:\Users\cmahair\git\SavageWorlds\SavageWorldsCharacterSheets\SavageWorldsCharacterSheets\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\cmahair\git\SavageWorlds\SavageWorldsCharacterSheets\SavageWorldsCharacterSheets\bin\Microsoft.ApplicationInsights.xml
+C:\Users\cmahair\git\SavageWorlds\SavageWorldsCharacterSheets\SavageWorldsCharacterSheets\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\cmahair\git\SavageWorlds\SavageWorldsCharacterSheets\SavageWorldsCharacterSheets\obj\Debug\SavageWorldsCharacterSheets.csprojResolveAssemblyReference.cache
+C:\Users\cmahair\git\SavageWorlds\SavageWorldsCharacterSheets\SavageWorldsCharacterSheets\obj\Debug\SavageWorldsCharacterSheets.dll
+C:\Users\cmahair\git\SavageWorlds\SavageWorldsCharacterSheets\SavageWorldsCharacterSheets\obj\Debug\SavageWorldsCharacterSheets.pdb

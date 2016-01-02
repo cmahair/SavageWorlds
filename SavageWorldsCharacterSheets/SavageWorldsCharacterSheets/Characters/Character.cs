@@ -23,10 +23,17 @@ namespace SavageWorldsCharacterSheets.Characters
         public Value Strength { get; set; }
         public Value Spirit { get; set; }
         public Value Vigor { get; set; }
-        public Dictionary<Skill,Value> Skills { get; set; }
+        public Dictionary<Skill, Value> Skills { get; set; }
         public int Wounds { get; set; }
         public List<Edge> Edges { get; set; }
         public List<Hindrance> Hindrances { get; set; }
+
+        public Character(string name)
+        {
+            this.Name = name;
+            this.Pace = 6;
+        }
+
 
         /**
         TODO
