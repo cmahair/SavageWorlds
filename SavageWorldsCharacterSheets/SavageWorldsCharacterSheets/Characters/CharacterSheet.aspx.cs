@@ -1,4 +1,5 @@
-﻿using SavageWorldsCharacterSheets.Tools;
+﻿using SavageWorldsCharacterSheets.Data;
+using SavageWorldsCharacterSheets.Tools;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,25 +12,29 @@ namespace SavageWorldsCharacterSheets.Characters
 {
     public partial class CharacterSheet : System.Web.UI.Page
     {
-        private static Character character;
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            BuildTable();
+            if (!IsPostBack)
+            {
+                BuildTable();
+            }
         }
 
         [WebMethod]
-        public static void NewCharacter()
+        public static Character NewCharacter()
         {
-            character = new Character("Enter Name");
-            
+            Character character = new Character("Enter Name");
+            CharacterSheet page = HttpContext.Current.Handler as CharacterSheet;
+            page.ViewState["character"] = character;
+            return character;
         }
 
         [WebMethod]
-        public static int BuildCharacter(string name)
+        public static void SaveCharacter()
         {
-            character = new Character(name);
-            return character.Pace;
+            CharacterSheet page = HttpContext.Current.Handler as CharacterSheet;
+            DataManager.SaveCharacter((Character)page.ViewState["character"]);
         }
 
         private void BuildTable()
@@ -44,6 +49,11 @@ namespace SavageWorldsCharacterSheets.Characters
             ddlstrength.DataBind();
             ddlvigor.DataSource = Enum.GetNames(typeof(Dice));
             ddlvigor.DataBind();
+        }
+
+        protected void bsave_Click(object sender, EventArgs e)
+        {
+            string text = tbname.Text;
         }
     }
 }

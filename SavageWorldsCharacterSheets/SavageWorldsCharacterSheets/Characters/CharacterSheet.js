@@ -1,14 +1,36 @@
 ﻿
 function load_clicked() {
-    this.alert("clicked");
-    PageMethods.BuildCharacter("Bob",OnSuccess,OnFail);
+    PageMethods.BuildCharacter("Bob",OnLoadSuccess,OnLoadFail);
 }
 
-function OnSuccess(response) {
+function OnLoadSuccess(response) {
     this.alert(response);
 }
 
-function OnFail(error) {
+function OnLoadFail(error) {
     this.alert(error);
 }
 
+function new_clicked() {
+    PageMethods.NewCharacter(OnNewSuccess, OnNewFail);
+}
+
+function OnNewSuccess(response) {
+    document.getElementById("content_tbname").value = response.Name;
+}
+
+function OnNewFail(error) {
+
+}
+
+function save_clicked() {
+
+}
+
+function OnSaveSuccess(response) {
+
+}
+
+function OnSaveFail(error) {
+
+}

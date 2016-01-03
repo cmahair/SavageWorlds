@@ -13,5 +13,16 @@ namespace SavageWorldsCharacterSheets.Tools
     {
         public Dice DieType { get; set; }
         public int Modifier { get; set; }
+
+        public override string ToString()
+        {
+            return DieType.ToString() + "+" + Modifier;
+        }
+
+        public Value(string data)
+        {
+            string[] stuff = data.Split('+');
+        }
+
     }
 }

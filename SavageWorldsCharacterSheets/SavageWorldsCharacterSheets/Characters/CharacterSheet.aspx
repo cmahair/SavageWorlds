@@ -2,11 +2,11 @@
 
 <asp:Content ID="Content" ContentPlaceHolderID="content" runat="server">
     <div>
-        <asp:Button ID="bnew" runat="server" OnClientClick="new_clicked();" Text="New" />
+        <asp:Button ID="bnew" runat="server" OnClientClick="new_clicked(); return false;" Text="New" />
         <asp:Button ID="bload" runat="server" OnClientClick="load_clicked();" Text="Load" />
-        <asp:Button ID="bsave" runat="server" OnClientClick="save_clicked();" Text="Save" />
+        <asp:Button ID="bsave" runat="server" OnClientClick="save_clicked();" Text="Save" OnClick="bsave_Click" />
     </div>
-    <asp:TextBox runat="server" ID="tbname">Name</asp:TextBox>
+    <asp:TextBox runat="server" ID="tbname" >Name</asp:TextBox>
     <asp:Table ID="characterTable" runat="server" >
         <asp:TableRow runat="server">
             <asp:TableCell runat="server">Agility</asp:TableCell>
