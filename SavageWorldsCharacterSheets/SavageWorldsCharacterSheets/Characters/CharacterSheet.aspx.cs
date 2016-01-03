@@ -30,13 +30,6 @@ namespace SavageWorldsCharacterSheets.Characters
             return character;
         }
 
-        [WebMethod]
-        public static void SaveCharacter()
-        {
-            CharacterSheet page = HttpContext.Current.Handler as CharacterSheet;
-            DataManager.SaveCharacter((Character)page.ViewState["character"]);
-        }
-
         private void BuildTable()
         {
             ddlagility.DataSource = Enum.GetNames(typeof(Dice));
@@ -53,7 +46,31 @@ namespace SavageWorldsCharacterSheets.Characters
 
         protected void bsave_Click(object sender, EventArgs e)
         {
-            string text = tbname.Text;
+            Character character = makeCharacterFromPage();
+            DataManager.SaveCharacter(character);
+        }
+
+        private Character makeCharacterFromPage()
+        {
+            Character character = new Character(tbname.Text);
+            character.Agility = new Value(ddlagility.SelectedValue + "," + getModifier(tbagility.Text));
+            character.Smarts = new Value(ddlsmarts.SelectedValue + "," + getModifier(tbsmarts.Text));
+            character.Strength = new Value(ddlstrength.SelectedValue + "," + getModifier(tbstrength.Text));
+            character.Spirit = new Value(ddlspirit.SelectedValue + "," + getModifier(tbspirit.Text));
+            character.Vigor = new Value(ddlvigor.SelectedValue + "," + getModifier(tbvigor.Text));
+            return character;
+        }
+
+        private int getModifier(string s)
+        {
+            int temp;
+            bool success;
+            success = int.TryParse(s, out temp);
+            if (!success)
+            {
+                temp = 0;
+            }
+            return temp;
         }
     }
 }

@@ -9,15 +9,16 @@ namespace SavageWorldsCharacterSheets.Data
 {
     public class DataManager
     {
-        const string CharacterFile = "Data/Characters/";
 
         public static void SaveCharacter(Character character)
         {
+            string CharacterFile = HttpContext.Current.Server.MapPath("~/App_Data/Characters/");
             string fileName = CharacterFile + character.Name;
-            using (Stream stream = File.Open(fileName, FileMode.Create))
+            using (FileStream stream = File.OpenWrite(fileName))
             {
-                var bformatter = new System.Runtime.Serialization.Formatters.Binary.BinaryFormatter();
-                bformatter.Serialize(stream, character);
+                StreamWriter writer = new StreamWriter(stream);
+                writer.Write(character.ToString());
+                writer.Close();
             }
         }
     }

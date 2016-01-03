@@ -16,12 +16,14 @@ namespace SavageWorldsCharacterSheets.Tools
 
         public override string ToString()
         {
-            return DieType.ToString() + "+" + Modifier;
+            return DieType.ToString() + "," + Modifier;
         }
 
         public Value(string data)
         {
-            string[] stuff = data.Split('+');
+            string[] stuff = data.Split(',');
+            DieType = (Dice) Enum.Parse(typeof(Dice), stuff[0], true);
+            Modifier = int.Parse(stuff[1]);
         }
 
     }

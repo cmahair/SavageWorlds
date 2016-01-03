@@ -1,17 +1,18 @@
 ﻿
 function load_clicked() {
-    PageMethods.BuildCharacter("Bob",OnLoadSuccess,OnLoadFail);
+    
 }
 
 function OnLoadSuccess(response) {
-    this.alert(response);
+    
 }
 
 function OnLoadFail(error) {
-    this.alert(error);
+    
 }
 
 function new_clicked() {
+    // TODO don't do server, just do client, silly.
     PageMethods.NewCharacter(OnNewSuccess, OnNewFail);
 }
 
@@ -33,4 +34,10 @@ function OnSaveSuccess(response) {
 
 function OnSaveFail(error) {
 
+}
+
+function validateNumeric(element) {
+    if (isNaN(element.Text)) {
+        element.Text = "";
+    }
 }

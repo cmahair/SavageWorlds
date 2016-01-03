@@ -3,6 +3,7 @@ using SavageWorldsCharacterSheets.Tools;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Web;
 
 namespace SavageWorldsCharacterSheets.Characters
@@ -34,7 +35,6 @@ namespace SavageWorldsCharacterSheets.Characters
             this.Pace = 6;
         }
 
-
         /**
         TODO
         Equipment
@@ -44,5 +44,22 @@ namespace SavageWorldsCharacterSheets.Characters
         Later:
         Injuries
         **/
+
+        public override string ToString()
+        {
+            StringBuilder retval = new StringBuilder("");
+            retval.AppendLine("Name:" + Name);
+            retval.AppendLine("Charisma:" + Charisma.ToString());
+            retval.AppendLine("Pace:" + Pace.ToString());
+            retval.AppendLine("Parry:" + Parry.ToString());
+            retval.AppendLine("Toughness:" + Toughness.ToString());
+            retval.AppendLine("Agility:" + Agility.ToString());
+            retval.AppendLine("Smarts:" + Smarts.ToString());
+            retval.AppendLine("Strength:" + Strength.ToString());
+            retval.AppendLine("Spirit:" + Spirit.ToString());
+            retval.AppendLine("Vigor:" + Vigor.ToString());
+            return retval.ToString();
+        }
+
     }
 }

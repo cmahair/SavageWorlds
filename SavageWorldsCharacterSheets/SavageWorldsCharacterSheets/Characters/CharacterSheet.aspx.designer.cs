@@ -67,6 +67,15 @@ namespace SavageWorldsCharacterSheets.Characters {
         protected global::System.Web.UI.WebControls.DropDownList ddlagility;
         
         /// <summary>
+        /// tbagility control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbagility;
+        
+        /// <summary>
         /// tbpace control.
         /// </summary>
         /// <remarks>
@@ -103,6 +112,15 @@ namespace SavageWorldsCharacterSheets.Characters {
         protected global::System.Web.UI.WebControls.DropDownList ddlsmarts;
         
         /// <summary>
+        /// tbsmarts control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbsmarts;
+        
+        /// <summary>
         /// ddlstrength control.
         /// </summary>
         /// <remarks>
@@ -110,6 +128,15 @@ namespace SavageWorldsCharacterSheets.Characters {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlstrength;
+        
+        /// <summary>
+        /// tbstrength control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbstrength;
         
         /// <summary>
         /// ddlspirit control.
@@ -121,6 +148,15 @@ namespace SavageWorldsCharacterSheets.Characters {
         protected global::System.Web.UI.WebControls.DropDownList ddlspirit;
         
         /// <summary>
+        /// tbspirit control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbspirit;
+        
+        /// <summary>
         /// ddlvigor control.
         /// </summary>
         /// <remarks>
@@ -128,5 +164,41 @@ namespace SavageWorldsCharacterSheets.Characters {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlvigor;
+        
+        /// <summary>
+        /// tbvigor control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbvigor;
+        
+        /// <summary>
+        /// ddladdskill control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddladdskill;
+        
+        /// <summary>
+        /// baddskill control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button baddskill;
+        
+        /// <summary>
+        /// skillTable control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Table skillTable;
     }
 }
