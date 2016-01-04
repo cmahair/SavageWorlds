@@ -2,9 +2,8 @@
 using SavageWorldsCharacterSheets.Tools;
 using System;
 using System.Collections.Generic;
-using System.Linq;
+using System.IO;
 using System.Text;
-using System.Web;
 
 namespace SavageWorldsCharacterSheets.Characters
 {
@@ -29,10 +28,56 @@ namespace SavageWorldsCharacterSheets.Characters
         public List<Edge> Edges { get; set; }
         public List<Hindrance> Hindrances { get; set; }
 
-        public Character(string name)
+        public Character() { }
+
+        /// <summary>
+        /// Instantiate a character from the file data
+        /// </summary>
+        /// <param name="text"></param>
+        public Character(string text)
         {
-            this.Name = name;
-            this.Pace = 6;
+            using (StringReader reader = new StringReader(text))
+            {
+                string line;
+                string[] stuff;
+                while ((line = reader.ReadLine()) != null)
+                {
+                    stuff = line.Split(':');
+                    switch (stuff[0])
+                    {
+                        case "Name":
+                            this.Name = stuff[1];
+                            break;
+                        case "Charisma":
+                            this.Charisma = int.Parse(stuff[1]);
+                            break;
+                        case "Pace":
+                            this.Pace = int.Parse(stuff[1]);
+                            break;
+                        case "Parry":
+                            this.Parry = int.Parse(stuff[1]);
+                            break;
+                        case "Toughness":
+                            this.Toughness = int.Parse(stuff[1]);
+                            break;
+                        case "Agility":
+                            this.Agility = new Value(stuff[1]);
+                            break;
+                        case "Smarts":
+                            this.Smarts = new Value(stuff[1]);
+                            break;
+                        case "Strength":
+                            this.Strength = new Value(stuff[1]);
+                            break;
+                        case "Spirit":
+                            this.Spirit = new Value(stuff[1]);
+                            break;
+                        case "Vigor":
+                            this.Vigor = new Value(stuff[1]);
+                            break;
+                    }
+                }
+            }
         }
 
         /**

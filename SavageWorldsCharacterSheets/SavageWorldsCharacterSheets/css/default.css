@@ -4,3 +4,13 @@
 .modifiertb {
     width: 30px
 }
+
+.left{
+    float: left;
+    width: 49%;
+}
+
+.right{
+    float: right;
+    width: 49%;
+}

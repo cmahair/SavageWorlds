@@ -22,15 +22,6 @@ namespace SavageWorldsCharacterSheets.Characters {
         protected global::System.Web.UI.WebControls.Button bnew;
         
         /// <summary>
-        /// bload control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button bload;
-        
-        /// <summary>
         /// bsave control.
         /// </summary>
         /// <remarks>
@@ -200,5 +191,14 @@ namespace SavageWorldsCharacterSheets.Characters {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Table skillTable;
+        
+        /// <summary>
+        /// characterList control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Table characterList;
     }
 }
